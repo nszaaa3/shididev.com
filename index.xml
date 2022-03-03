@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unnamed</title>
-    <link>https://www.bmpi.dev/</link>
+    <link>https://shididev.com/</link>
     <description>Recent content on Unnamed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 03 Mar 2022 09:25:12 +0000</lastBuildDate><atom:link href="https://www.bmpi.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 09:25:12 +0000</lastBuildDate><atom:link href="https://shididev.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker-2、容器安装之Oracle 11g r2</title>
       
@@ -14,10 +14,10 @@
       
       
       
-      <link>https://www.bmpi.dev/dev/docker-2-container-oracle11g/</link>
+      <link>https://shididev.com/dev/docker-2-container-oracle11g/</link>
       <pubDate>Thu, 03 Mar 2022 09:25:12 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/dev/docker-2-container-oracle11g/</guid>
+      <guid>https://shididev.com/dev/docker-2-container-oracle11g/</guid>
       <description></description>
     </item>
     
@@ -28,10 +28,10 @@
       
       
       
-      <link>https://www.bmpi.dev/dev/docker-1-container-mysql/</link>
+      <link>https://shididev.com/dev/docker-1-container-mysql/</link>
       <pubDate>Tue, 01 Mar 2022 11:38:04 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/dev/docker-1-container-mysql/</guid>
+      <guid>https://shididev.com/dev/docker-1-container-mysql/</guid>
       <description></description>
     </item>
     
@@ -42,10 +42,10 @@
       
       
       
-      <link>https://www.bmpi.dev/dev/docker-0-what-why-how/</link>
+      <link>https://shididev.com/dev/docker-0-what-why-how/</link>
       <pubDate>Sun, 20 Feb 2022 11:30:04 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/dev/docker-0-what-why-how/</guid>
+      <guid>https://shididev.com/dev/docker-0-what-why-how/</guid>
       <description></description>
     </item>
     
@@ -54,10 +54,10 @@
       
       
       
-      <link>https://www.bmpi.dev/about.en/</link>
+      <link>https://shididev.com/about.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/about.en/</guid>
+      <guid>https://shididev.com/about.en/</guid>
       <description>About me</description>
     </item>
     
@@ -66,10 +66,10 @@
       
       
       
-      <link>https://www.bmpi.dev/categories/_index.en/</link>
+      <link>https://shididev.com/categories/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/categories/_index.en/</guid>
+      <guid>https://shididev.com/categories/_index.en/</guid>
       <description>Self-management and invest and full-stack development posts</description>
     </item>
     
@@ -78,10 +78,10 @@
       
       
       
-      <link>https://www.bmpi.dev/link.en/</link>
+      <link>https://shididev.com/link.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/link.en/</guid>
+      <guid>https://shididev.com/link.en/</guid>
       <description>Friend Links</description>
     </item>
     
@@ -90,10 +90,10 @@
       
       
       
-      <link>https://www.bmpi.dev/goal.en/</link>
+      <link>https://shididev.com/goal.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/goal.en/</guid>
+      <guid>https://shididev.com/goal.en/</guid>
       <description>My ten years personal goal</description>
     </item>
     
@@ -102,10 +102,10 @@
       
       
       
-      <link>https://www.bmpi.dev/affiliate.en/</link>
+      <link>https://shididev.com/affiliate.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/affiliate.en/</guid>
+      <guid>https://shididev.com/affiliate.en/</guid>
       <description>My Recommend Things</description>
     </item>
     
@@ -114,10 +114,10 @@
       
       
       
-      <link>https://www.bmpi.dev/tool.en/</link>
+      <link>https://shididev.com/tool.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/tool.en/</guid>
+      <guid>https://shididev.com/tool.en/</guid>
       <description>My Tools</description>
     </item>
     
@@ -126,10 +126,10 @@
       
       
       
-      <link>https://www.bmpi.dev/series/_index.en/</link>
+      <link>https://shididev.com/series/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/series/_index.en/</guid>
+      <guid>https://shididev.com/series/_index.en/</guid>
       <description>series posts</description>
     </item>
     
@@ -138,10 +138,10 @@
       
       
       
-      <link>https://www.bmpi.dev/project.en/</link>
+      <link>https://shididev.com/project.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/project.en/</guid>
+      <guid>https://shididev.com/project.en/</guid>
       <description>Build passive income through personal side project</description>
     </item>
     
@@ -150,10 +150,10 @@
       
       
       
-      <link>https://www.bmpi.dev/tags/_index.en/</link>
+      <link>https://shididev.com/tags/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/tags/_index.en/</guid>
+      <guid>https://shididev.com/tags/_index.en/</guid>
       <description>All about make my life better tags, eg. money, etf and so on</description>
     </item>
     
@@ -162,10 +162,10 @@
       
       
       
-      <link>https://www.bmpi.dev/talk/</link>
+      <link>https://shididev.com/talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/talk/</guid>
+      <guid>https://shididev.com/talk/</guid>
       <description>My talks</description>
     </item>
     
@@ -174,10 +174,10 @@
       
       
       
-      <link>https://www.bmpi.dev/about/</link>
+      <link>https://shididev.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/about/</guid>
+      <guid>https://shididev.com/about/</guid>
       <description>关于本站</description>
     </item>
     
@@ -186,10 +186,10 @@
       
       
       
-      <link>https://www.bmpi.dev/link/</link>
+      <link>https://shididev.com/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/link/</guid>
+      <guid>https://shididev.com/link/</guid>
       <description>我的朋友们及我关注的博主</description>
     </item>
     
@@ -198,10 +198,10 @@
       
       
       
-      <link>https://www.bmpi.dev/project/</link>
+      <link>https://shididev.com/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/project/</guid>
+      <guid>https://shididev.com/project/</guid>
       <description>通过个人产品、项目、副业建立被动收入</description>
     </item>
     
@@ -210,10 +210,10 @@
       
       
       
-      <link>https://www.bmpi.dev/affiliate/</link>
+      <link>https://shididev.com/affiliate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/affiliate/</guid>
+      <guid>https://shididev.com/affiliate/</guid>
       <description>分享我在使用的一些产品和服务，基准是我正在使用的感觉不错的东西</description>
     </item>
     
@@ -222,10 +222,10 @@
       
       
       
-      <link>https://www.bmpi.dev/tool/</link>
+      <link>https://shididev.com/tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/tool/</guid>
+      <guid>https://shididev.com/tool/</guid>
       <description>分享我在使用的一些实用小工具</description>
     </item>
     
@@ -234,10 +234,10 @@
       
       
       
-      <link>https://www.bmpi.dev/goal/</link>
+      <link>https://shididev.com/goal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/goal/</guid>
+      <guid>https://shididev.com/goal/</guid>
       <description>我的长期目标</description>
     </item>
     
@@ -246,10 +246,10 @@
       
       
       
-      <link>https://www.bmpi.dev/invest/</link>
+      <link>https://shididev.com/invest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/invest/</guid>
+      <guid>https://shididev.com/invest/</guid>
       <description>投资组合管理服务</description>
     </item>
     
@@ -258,10 +258,10 @@
       
       
       
-      <link>https://www.bmpi.dev/_ad/</link>
+      <link>https://shididev.com/_ad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bmpi.dev/_ad/</guid>
+      <guid>https://shididev.com/_ad/</guid>
       <description>本站品牌广告</description>
     </item>
     
