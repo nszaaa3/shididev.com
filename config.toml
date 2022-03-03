@@ -105,7 +105,7 @@ FootnoteReturnLinkContents = "↑"
     name = "Newsletter"
     icon = "fas fa-envelope"
     weight = 6
-    url = "https://tinyletter.com/i365"
+    url = "mailto:shididev@gmail.com"
 
 [languages]
 
