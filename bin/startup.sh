@@ -1,1 +1,2 @@
-hugo server --port=4000
+cd ..
+hugo  server --port=4000
