@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unnamed</title>
+    <link>https://www.bmpi.dev/</link>
+    <description>Recent content on Unnamed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 03 Mar 2022 09:25:12 +0000</lastBuildDate><atom:link href="https://www.bmpi.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker-2、容器安装之Oracle 11g r2</title>
+      
+      <category>Full-Stack Developer</category>
+      
+      
+      
+      <link>https://www.bmpi.dev/dev/docker-2-container-oracle11g/</link>
+      <pubDate>Thu, 03 Mar 2022 09:25:12 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/dev/docker-2-container-oracle11g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker-1、容器安装之MySQL(5.7/8.0)</title>
+      
+      <category>Full-Stack Developer</category>
+      
+      
+      
+      <link>https://www.bmpi.dev/dev/docker-1-container-mysql/</link>
+      <pubDate>Tue, 01 Mar 2022 11:38:04 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/dev/docker-1-container-mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker-0、基础概念</title>
+      
+      <category>Full-Stack Developer</category>
+      
+      
+      
+      <link>https://www.bmpi.dev/dev/docker-0-what-why-how/</link>
+      <pubDate>Sun, 20 Feb 2022 11:30:04 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/dev/docker-0-what-why-how/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/about.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/about.en/</guid>
+      <description>About me</description>
+    </item>
+    
+    <item>
+      <title>Categories</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/categories/_index.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/categories/_index.en/</guid>
+      <description>Self-management and invest and full-stack development posts</description>
+    </item>
+    
+    <item>
+      <title>Friend Links</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/link.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/link.en/</guid>
+      <description>Friend Links</description>
+    </item>
+    
+    <item>
+      <title>My Long Term Goal</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/goal.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/goal.en/</guid>
+      <description>My ten years personal goal</description>
+    </item>
+    
+    <item>
+      <title>My Recommend Things</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/affiliate.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/affiliate.en/</guid>
+      <description>My Recommend Things</description>
+    </item>
+    
+    <item>
+      <title>My Tools</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/tool.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/tool.en/</guid>
+      <description>My Tools</description>
+    </item>
+    
+    <item>
+      <title>Series</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/series/_index.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/series/_index.en/</guid>
+      <description>series posts</description>
+    </item>
+    
+    <item>
+      <title>Side Project</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/project.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/project.en/</guid>
+      <description>Build passive income through personal side project</description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/tags/_index.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/tags/_index.en/</guid>
+      <description>All about make my life better tags, eg. money, etf and so on</description>
+    </item>
+    
+    <item>
+      <title>Talk</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/talk/</guid>
+      <description>My talks</description>
+    </item>
+    
+    <item>
+      <title>关于本站</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/about/</guid>
+      <description>关于本站</description>
+    </item>
+    
+    <item>
+      <title>友情链接</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/link/</guid>
+      <description>我的朋友们及我关注的博主</description>
+    </item>
+    
+    <item>
+      <title>我的个人项目</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/project/</guid>
+      <description>通过个人产品、项目、副业建立被动收入</description>
+    </item>
+    
+    <item>
+      <title>我的好物推荐</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/affiliate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/affiliate/</guid>
+      <description>分享我在使用的一些产品和服务，基准是我正在使用的感觉不错的东西</description>
+    </item>
+    
+    <item>
+      <title>我的工具清单</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/tool/</guid>
+      <description>分享我在使用的一些实用小工具</description>
+    </item>
+    
+    <item>
+      <title>我的长期目标</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/goal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/goal/</guid>
+      <description>我的长期目标</description>
+    </item>
+    
+    <item>
+      <title>投资组合管理服务</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/invest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/invest/</guid>
+      <description>投资组合管理服务</description>
+    </item>
+    
+    <item>
+      <title>本站品牌广告</title>
+      
+      
+      
+      <link>https://www.bmpi.dev/_ad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bmpi.dev/_ad/</guid>
+      <description>本站品牌广告</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <meta name="author" content="小克迪">
+  
+  <meta name="description" content="通过学习（GTD、时间管理、知识管理、写作、财务管理）、技术创造（前端、后端、移动端、DevOps）、投资（指数投资、基金、股票、债券）、网赚项目（SEO、Affiliate、Media Buy、Niche、社交媒体）来建立被动收入">
+  
+  
+  
+  <meta name="keywords" content="自我提升、时间管理、GTD、写作、摄影、笔记管理、知识管理、财务管理、全栈开发、指数投资、基金、股票、债券、SEO、Affiliate、Media Buy、Niche、社交媒体、被动收入、网赚">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@BMPI11">
+  <meta name="twitter:creator" content="@madawei2699">
+  <meta name="twitter:title" content="Docker-1、容器安装之MySQL(5.7/8.0)"/>
+  <meta name="twitter:description" content=""/>
+  
+  
+  <meta name="twitter:image" content="https://www.bmpi.dev/images/bg2.png">
+  
+
+  
+  <meta property="og:title" content="Docker-1、容器安装之MySQL(5.7/8.0)" />
+<meta property="og:description" content="OK，我已经把我抄的教程全部删掉了，再从自己在用的容器中摘几个新鲜的出来。 用的源几乎都是国内的docker镜像，所以安装起来飞快。
+MySQL5.7 docker run -p 3306:3306 \ --name mysql57 \ -v /opt/docker/mysql57/conf.d:/etc/mysql/conf.d \ -v /opt/docker/mysql57/mysql.conf.d:/etc/mysql/mysql.conf.d \ -v /opt/docker/mysql57/logs:/logs \ -v /opt/docker/mysql57/data:/var/lib/mysql \ -e MYSQL_ROOT_PASSWORD=123456 \ -d hub.c.163.com/library/mysql:5.7  -p [xxxx]:3306 将容器中的3306端口映射到宿主机的xxxx端口  p - port 端口   -v [/xxx/xxx]: /etc/mysql/conf.d 将容器中的/etc/mysql/conf.d目录映射到宿主机的/xxx/xxx目录，在这里我映射到宿主机的/opt/docker/mysql57/conf.d  v - volume 卷   -e xxx=xxx 设定环境变量  e - environment 环境   -d 后台运行容器，并返回容器ID  d - detach 分离    在上面有4个 -v 参数，分别将容器中的两个配置目录、一个日志目录、 一个数据目录映射到宿主机指定的目录里，这样即使容器因为环境崩溃时，我们也可以在这里修改、查看、操作容器的配置、数据" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.bmpi.dev/dev/docker-1-container-mysql/" /><meta property="article:section" content="dev" />
+<meta property="article:published_time" content="2022-03-01T11:38:04&#43;00:00" />
+<meta property="article:modified_time" content="2022-03-03T23:34:20&#43;08:00" /><meta property="og:site_name" content="Unnamed" />
+
+
+  
+  <meta name="og:image" content="https://www.bmpi.dev/images/bg2.png">
+  
+
+  
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      
+      "@type": "BlogPosting",
+      
+      "headline": "Docker-1、容器安装之MySQL(5.7/8.0)",
+      
+      "image": "https://www.bmpi.dev/images/cat.png",
+      
+      "datePublished": "2022-03-01T11:38:04Z",
+      "dateModified": "2022-03-03T23:34:20+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "小克迪"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bmpi.dev/dev/docker-1-container-mysql/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BMPI.dev",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bmpi.dev/images/cat.png"
+        }
+      },
+      "description":  null ,
+      "keywords": ["Docker", "MySQL", "Database"]
+    }
+    </script>
+
+
+
+  
+  <base href="https://www.bmpi.dev/dev/docker-1-container-mysql/">
+  
+  <title>
+  Docker-1、容器安装之MySQL(5.7/8.0) · Unnamed
+</title>
+
+  
+  <link rel="canonical" href="https://www.bmpi.dev/dev/docker-1-container-mysql/">
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+  
+  
+  
+  <link rel="stylesheet" href="https://www.bmpi.dev/css/coder.min.3f6b19e948698fa2be93c8601e8b7c02aa06e606988efcd235533fc6392ba440.css" integrity="sha256-P2sZ6Uhpj6K&#43;k8hgHot8AqoG5gaYjvzSNVM/xjkrpEA="
+    crossorigin="anonymous" media="screen" />
+  
+
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.bmpi.dev/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU="
+    crossorigin="anonymous" media="screen" />
+  
+  
+
+  
+
+  
+  <link rel="stylesheet" href="https://www.bmpi.dev/css/main.css" />
+  
+
+  
+  <script src="https://www.bmpi.dev/js/lazysizes.min.js" async></script>
+  
+  <script src="https://www.bmpi.dev/js/flying-pages.min.js" async></script>
+  
+  <script src="https://www.bmpi.dev/js/custom.js" async></script>
+  
+
+  <link rel="icon" type="image/png" href="https://www.bmpi.dev/images/f3/favicon-32x32.png"
+    sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.bmpi.dev/images/f3/favicon-16x16.png"
+    sizes="16x16">
+
+  <link rel="amphtml" type="text/html" href="https://www.bmpi.dev/amp/dev/docker-1-container-mysql/" title="Unnamed" />
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <meta name="baidu-site-verification" content="TiReu51WyJ" />
+
+  
+  
+  <link rel="preload" href="https://www.bmpi.dev/scss/tagcloud.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://www.bmpi.dev/scss/tagcloud.css"></noscript>
+
+  
+  <script defer src='https://platform-api.sharethis.com/js/sharethis.js#property=600a642fe0b9b900111a7f08&product=inline-share-buttons'></script>
+  <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css"></noscript>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  
+
+  
+</head>
+
+
+
+
+
+
+<body class="colorscheme-auto">
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.bmpi.dev/">
+      Unnamed
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/about/">关于</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/self/">学习</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/dev/">技术</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/money/">投资</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/project/">个人项目</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/goal/">长期目标</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title heti">
+          <h1 class="title">Docker-1、容器安装之MySQL(5.7/8.0)</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2022-03-01T11:38:04Z'>
+                2022-03-01
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              
+              
+              
+              3:55
+              
+            </span>
+            
+            <span class="post-word-count"> | 164 字 | </span>
+            <span id="post-views"></span> 次阅读
+            
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.bmpi.dev/categories/docker/">Docker</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.bmpi.dev/tags/docker/">Docker</a>
+      <span class="separator">•</span>
+    <a href="https://www.bmpi.dev/tags/mysql/">MySQL</a>
+      <span class="separator">•</span>
+    <a href="https://www.bmpi.dev/tags/database/">Database</a></div>
+
+        </div>
+      </header>
+
+      
+
+      <div class="article">
+        <div class="article-content heti" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+          
+          
+          
+          
+          <p>OK，我已经把我抄的教程全部删掉了，再从自己在用的容器中摘几个新鲜的出来。 用的源几乎都是国内的docker镜像，所以安装起来飞快。</p>
+<h2 id="mysql57">MySQL5.7</h2>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -p 3306:3306 <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>--name mysql57 <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql57/conf.d:/etc/mysql/conf.d <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql57/mysql.conf.d:/etc/mysql/mysql.conf.d <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql57/logs:/logs <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql57/data:/var/lib/mysql <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-e MYSQL_ROOT_PASSWORD=<span style="color:#ff0;font-weight:bold">123456</span> <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-d hub.c.163.com/library/mysql:5.7
+</code></pre></div><ul>
+<li>-p [xxxx]:3306 将容器中的3306端口映射到宿主机的xxxx端口
+<ul>
+<li>p - port 端口</li>
+</ul>
+</li>
+<li>-v [/xxx/xxx]: /etc/mysql/conf.d 将容器中的/etc/mysql/conf.d目录映射到宿主机的/xxx/xxx目录，在这里我映射到宿主机的/opt/docker/mysql57/conf.d
+<ul>
+<li>v - volume 卷</li>
+</ul>
+</li>
+<li>-e xxx=xxx 设定环境变量
+<ul>
+<li>e - environment 环境</li>
+</ul>
+</li>
+<li>-d 后台运行容器，并返回容器ID
+<ul>
+<li>d - detach 分离</li>
+</ul>
+</li>
+</ul>
+<p>在上面有4个 -v 参数，分别将容器中的两个配置目录、一个日志目录、 一个数据目录映射到宿主机指定的目录里，这样即使容器因为环境崩溃时，我们也可以在这里修改、查看、操作容器的配置、数据</p>
+<p>通过此法创建的MySQL创建完成后，还有两个后续操作：</p>
+<ul>
+<li>修改全局默认编码方式为utf8</li>
+<li>取消大小写敏感</li>
+</ul>
+<p>因为已经有上面的映射操作，我们就可以在本地直接修改</p>
+<ul>
+<li>
+<p>用vim编辑mysql.cnf文件</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /opt/docker/mysql57/conf.d/mysql.cnf
+</code></pre></div><p>添加如下内容</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">[mysql]
+default-character-set=utf8
+</code></pre></div></li>
+<li>
+<p>用vim编辑mysqld.cnf文件 添加如下内容</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">[mysqld]
+character-set-server=utf8
+lower_case_table_names=<span style="color:#ff0;font-weight:bold">1</span>
+</code></pre></div></li>
+</ul>
+<h2 id="mysql80">MySQL8.0</h2>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -p 3306:3306 <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>--name mysql80 <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql80/conf:/etc/mysql/conf.d <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql80/logs:/logs <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-v /opt/docker/mysql80/data:/var/lib/mysql <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-e MYSQL_ROOT_PASSWORD=<span style="color:#ff0;font-weight:bold">123456</span> <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>-d hub.c.163.com/library/mysql:8.0 <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>--lower_case_table_names=<span style="color:#ff0;font-weight:bold">1</span> <span style="color:#0ff;font-weight:bold">\
+</span><span style="color:#0ff;font-weight:bold"></span>--character-set-server=utf8
+</code></pre></div><p>Well，创建MySQL8.0容器的时候可以直接指定大小写敏感和默认编码方式，更多的是因为MySQL8.0我玩得还不是很溜，按照MySQL5.7那样修改时，不会生效，所以找到了这个方法。我在创建MySQL5.7容器的时候咋没看到这样的好方法？</p>
+<h2 id="后续操作">后续操作</h2>
+<p>因为Linux上的MySQL5.7和MySQL8.0的root账户默认不允许远程连接，也不建议远程连接，所以需要进入到MySQL容器内部去创建一个新用户并授权远程操作。</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo docker <span style="color:#fff;font-weight:bold">exec</span> -it mysql57 bash
+<span style="color:#007f7f">#或者</span>
+sudo docker <span style="color:#fff;font-weight:bold">exec</span> -it mysql80 bash
+</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#007f7f">#登录MySQL</span>
+mysql -u root -p123456
+<span style="color:#007f7f">#修改密码</span>
+ALTER USER <span style="color:#0ff;font-weight:bold">&#39;root&#39;</span>@<span style="color:#0ff;font-weight:bold">&#39;localhost&#39;</span> IDENTIFIED BY <span style="color:#0ff;font-weight:bold">&#39;new_password&#39;</span>;
+<span style="color:#007f7f">#添加远程登录用户</span>
+CREATE USER <span style="color:#0ff;font-weight:bold">&#39;new_user&#39;</span>@<span style="color:#0ff;font-weight:bold">&#39;%&#39;</span> IDENTIFIED WITH mysql_native_password BY <span style="color:#0ff;font-weight:bold">&#39;new_password&#39;</span>;
+<span style="color:#007f7f">#给予权限</span>
+<span style="color:#007f7f">#MySQL 5.7版本：</span>
+GRANT ALL PRIVILEGES ON *.* TO <span style="color:#0ff;font-weight:bold">&#39;new_user&#39;</span>@<span style="color:#0ff;font-weight:bold">&#39;%&#39;</span>;
+<span style="color:#007f7f">#MySQL 8.0版本：</span>
+GRANT ALL PRIVILEGES on *.* to <span style="color:#0ff;font-weight:bold">&#39;new_user&#39;</span>@<span style="color:#0ff;font-weight:bold">&#39;%&#39;</span> WITH GRANT OPTION;
+</code></pre></div><p>修改保存完成之后，重启容器即可生效。</p>
+<p>现在可以用远程工具来连接MySQL了。</p>
+<p>如果宿主机没有安装MySQL，所以需要安装mysql-client或者mycli。</p>
+
+        </div>
+
+        <div id="article-info">
+          
+        <div style="color: #5c7080;font-size: small;font-style: italic;">
+          更新时间:
+          
+          
+          
+          
+          
+              今日
+          
+          
+           版本: <a href="https://github.com/madawei2699/bmpi.dev/commit/9b073c1d5811a411fcc8ea4bf330bb5710606d49">9b073c1</a>
+        </div>
+        
+
+        <div style="text-align: center;color: darkgray;">
+          
+          <p>本作品采用<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color: darkgray;">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可</p>
+          
+        </div>
+
+        <div style="border-bottom-style: dashed;border-bottom-style: inset;border-bottom-width: 2px;width: 50%;margin: 0 auto;"></div>
+        
+        </div>
+      </div>
+
+      <footer>
+        <div>
+  
+  <h2 style="border-style: none;margin: 10px 0;">相关文章推荐</h2>
+  
+  <div style="padding-left: 10px;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li style="list-style: none;"><a href="https://www.bmpi.dev/dev/docker-2-container-oracle11g/">Docker-2、容器安装之Oracle 11g r2</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+  </div>
+  <div style="border-bottom-style: dashed;border-bottom-style: inset;border-bottom-width: 2px;width: 50%;margin: 20px auto;"></div>
+</div>
+
+        <div class="sharethis-inline-reaction-buttons"></div>
+<div class="sharethis-inline-share-buttons"></div>
+
+        
+
+        
+
+
+        
+        
+        <script src="https://utteranc.es/client.js"
+  repo= "bmpi-dev/bmpi.dev"
+  issue-term="title"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+      </footer>
+    </article>
+    <template><span id="control"></span></template>
+    <div id="toast"></div>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  
+  <div class="footer-taxonomy">
+    <a href=https://www.bmpi.dev/tags style="color: #B36D61;">Tags</a>
+    👈
+    <a href=https://www.bmpi.dev/categories style="color: #FF8C31;">Categories</a>
+    👉
+    <a href=https://www.bmpi.dev/series style="color: #519A73;">Series</a>
+  </div>
+  <section class="container">
+    
+     © 2019 - 2022
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154678195-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154678195-1');
+  </script>
+  
+
+  
+  <script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHuwaXciWicBjh6HQS2tfudv6IYQD11K9u1NUj7nuaEV9NoDT7ns9JjgqyYTflUv-m3TlD7ELY84AHMfgmPXNgU');</script>
+  
+
+  
+
+  
+  <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+  <script>
+    
+    const heti = new Heti('.heti p, li, a, h1, h2, h3, h4, h5, h6, .title');
+    heti.autoSpacing(); 
+    
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
+  
+
+  
+
+  
+
+</body>
+
+</html>

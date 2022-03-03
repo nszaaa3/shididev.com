@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <meta name="author" content="小克迪">
+  
+  <meta name="description" content="编程技术系列文章，分享我关于软件工程、全栈开发、DevOps、云原生、Serverless、SEO、流量站开发、爬虫技术、机器学习应用、分布式技术、系统架构及编程语言范式等方面的个人经验">
+  
+  
+  <meta name="keywords" content="编程技巧, 全栈开发, 前端开发, 后端开发, 移动端开发, DevOps技术, Python, 爬虫, SEO, 量化交易技术, Java, Elixir, 函数式开发, 面向对象开发, 高并发系统架构, 重构, TDD, DDD, 系统架构, 分布式与微服务, P2P技术, GitHub开源项目, 套利技术, Bot开发">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@BMPI11">
+  <meta name="twitter:creator" content="@madawei2699">
+  <meta name="twitter:title" content="编程技术系列文章"/>
+  <meta name="twitter:description" content="编程技术系列文章，分享我关于软件工程、全栈开发、DevOps、云原生、Serverless、SEO、流量站开发、爬虫技术、机器学习应用、分布式技术、系统架构及编程语言范式等方面的个人经验"/>
+  
+  
+  <meta name="twitter:image" content="https://www.bmpi.dev/images/bg2.png">
+  
+
+  
+  <meta property="og:title" content="编程技术系列文章" />
+<meta property="og:description" content="编程技术系列文章，分享我关于软件工程、全栈开发、DevOps、云原生、Serverless、SEO、流量站开发、爬虫技术、机器学习应用、分布式技术、系统架构及编程语言范式等方面的个人经验" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.bmpi.dev/dev/" /><meta property="og:site_name" content="Unnamed" />
+
+
+  
+  <meta name="og:image" content="https://www.bmpi.dev/images/bg2.png">
+  
+
+  
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      
+      "@type": "Blog",
+      
+      "headline": "编程技术系列文章",
+      
+      "image": "https://www.bmpi.dev/images/cat.png",
+      
+      "datePublished": "0001-01-01T00:00:00Z",
+      "dateModified": "2022-03-03T23:34:20+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "小克迪"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bmpi.dev/dev/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BMPI.dev",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bmpi.dev/images/cat.png"
+        }
+      },
+      "description": "编程技术系列文章，分享我关于软件工程、全栈开发、DevOps、云原生、Serverless、SEO、流量站开发、爬虫技术、机器学习应用、分布式技术、系统架构及编程语言范式等方面的个人经验",
+      "keywords": []
+    }
+    </script>
+
+
+
+  
+  <base href="https://www.bmpi.dev/dev/">
+  
+  <title>
+  编程技术系列文章 · Unnamed
+</title>
+
+  
+  <link rel="canonical" href="https://www.bmpi.dev/dev/">
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+  
+  
+  
+  <link rel="stylesheet" href="https://www.bmpi.dev/css/coder.min.3f6b19e948698fa2be93c8601e8b7c02aa06e606988efcd235533fc6392ba440.css" integrity="sha256-P2sZ6Uhpj6K&#43;k8hgHot8AqoG5gaYjvzSNVM/xjkrpEA="
+    crossorigin="anonymous" media="screen" />
+  
+
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.bmpi.dev/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU="
+    crossorigin="anonymous" media="screen" />
+  
+  
+
+  
+
+  
+  <link rel="stylesheet" href="https://www.bmpi.dev/css/main.css" />
+  
+
+  
+  <script src="https://www.bmpi.dev/js/lazysizes.min.js" async></script>
+  
+  <script src="https://www.bmpi.dev/js/flying-pages.min.js" async></script>
+  
+  <script src="https://www.bmpi.dev/js/custom.js" async></script>
+  
+
+  <link rel="icon" type="image/png" href="https://www.bmpi.dev/images/f3/favicon-32x32.png"
+    sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.bmpi.dev/images/f3/favicon-16x16.png"
+    sizes="16x16">
+
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <meta name="baidu-site-verification" content="TiReu51WyJ" />
+
+  
+  
+  <link rel="preload" href="https://www.bmpi.dev/scss/tagcloud.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://www.bmpi.dev/scss/tagcloud.css"></noscript>
+
+  
+  <script defer src='https://platform-api.sharethis.com/js/sharethis.js#property=600a642fe0b9b900111a7f08&product=inline-share-buttons'></script>
+  <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css"></noscript>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  
+
+  
+</head>
+
+
+
+
+
+
+<body class="colorscheme-auto">
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.bmpi.dev/">
+      Unnamed
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/about/">关于</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/self/">学习</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/dev/">技术</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/money/">投资</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/project/">个人项目</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.bmpi.dev/goal/">长期目标</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container list">
+    <h1 class="title" style="font-size: 1.6rem !important;border-bottom:1px dotted #bf7326;padding-bottom:20px;">编程技术系列文章，分享我关于软件工程、全栈开发、DevOps、云原生、Serverless、SEO、流量站开发、爬虫技术、机器学习应用、分布式技术、系统架构及编程语言范式等方面的个人经验</h1>
+
+    <ul><li class="heti" style="max-width: fit-content;">
+  <span class="date">2022-03-03</span>
+  <a class="title" href="https://www.bmpi.dev/dev/docker-2-container-oracle11g/">Docker-2、容器安装之Oracle 11g r2</a>
+</li>
+<li class="heti" style="max-width: fit-content;">
+  <span class="date">2022-03-01</span>
+  <a class="title" href="https://www.bmpi.dev/dev/docker-1-container-mysql/">Docker-1、容器安装之MySQL(5.7/8.0)</a>
+</li>
+<li class="heti" style="max-width: fit-content;">
+  <span class="date">2022-02-20</span>
+  <a class="title" href="https://www.bmpi.dev/dev/docker-0-what-why-how/">Docker-0、基础概念</a>
+</li>
+</ul>
+
+    
+
+
+
+
+
+
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  
+  <div class="footer-taxonomy">
+    <a href=https://www.bmpi.dev/tags style="color: #B36D61;">Tags</a>
+    👈
+    <a href=https://www.bmpi.dev/categories style="color: #FF8C31;">Categories</a>
+    👉
+    <a href=https://www.bmpi.dev/series style="color: #519A73;">Series</a>
+  </div>
+  <section class="container">
+    
+     © 2019 - 2022
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154678195-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154678195-1');
+  </script>
+  
+
+  
+  <script>(function(w,d, s, id) {w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));webpushr('init','BHuwaXciWicBjh6HQS2tfudv6IYQD11K9u1NUj7nuaEV9NoDT7ns9JjgqyYTflUv-m3TlD7ELY84AHMfgmPXNgU');</script>
+  
+
+  
+
+  
+  <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+  <script>
+    
+    const heti = new Heti('.heti p, li, a, h1, h2, h3, h4, h5, h6, .title');
+    heti.autoSpacing(); 
+    
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
+  
+
+  
+
+  
+
+</body>
+
+</html>
