@@ -23,7 +23,7 @@
   <meta name="twitter:description" content=""/>
   
   
-  <meta name="twitter:image" content="https://shididev.com/images/bg2.png">
+  <meta name="twitter:image" content="//images/bg2.png">
   
 
   
@@ -47,13 +47,13 @@ What 为什么这样说，我们先来看看Docker的标识，如下图：
 Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直接使用的Docker容器，对比以下两段代码：
 # Installing MySQL in a CentOS container sudo docker pull centos sudo docker run -it --name centos7 -p 3306:3306 --privileged=true centos:latest /usr/sbin/init sudo docker exec -it centos7 bash yum update yum install mysql-server # Installing a MySQL container docker run -p 3306:3306 --name mysql57 mysql 这两段代码完成了同样的工作——创建一个docker容器，并安装好MySQL数据库，安装下载MySQL的时间还不计在内。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shididev.com/dev/docker-0-what-why-how/" /><meta property="article:section" content="dev" />
+<meta property="og:url" content="/dev/docker-0-what-why-how/" /><meta property="article:section" content="dev" />
 <meta property="article:published_time" content="2022-02-20T11:30:04&#43;00:00" />
 <meta property="article:modified_time" content="2022-03-03T23:34:20&#43;08:00" /><meta property="og:site_name" content="Unnamed" />
 
 
   
-  <meta name="og:image" content="https://shididev.com/images/bg2.png">
+  <meta name="og:image" content="//images/bg2.png">
   
 
   
@@ -66,7 +66,7 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
       
       "headline": "Docker-0、基础概念",
       
-      "image": "https://shididev.com/images/cat.png",
+      "image": "/images/cat.png",
       
       "datePublished": "2022-02-20T11:30:04Z",
       "dateModified": "2022-03-03T23:34:20+08:00",
@@ -76,14 +76,14 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://shididev.com/dev/docker-0-what-why-how/"
+        "@id": "/dev/docker-0-what-why-how/"
       },
       "publisher": {
         "@type": "Organization",
         "name": "BMPI.dev",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://shididev.com/images/cat.png"
+          "url": "/images/cat.png"
         }
       },
       "description":  null ,
@@ -94,14 +94,14 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
 
 
   
-  <base href="https://shididev.com/dev/docker-0-what-why-how/">
+  <base href="/dev/docker-0-what-why-how/">
   
   <title>
   Docker-0、基础概念 · Unnamed
 </title>
 
   
-  <link rel="canonical" href="https://shididev.com/dev/docker-0-what-why-how/">
+  <link rel="canonical" href="/dev/docker-0-what-why-how/">
   
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"
@@ -112,7 +112,7 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
   
   
   
-  <link rel="stylesheet" href="https://shididev.com/css/coder.min.3f6b19e948698fa2be93c8601e8b7c02aa06e606988efcd235533fc6392ba440.css" integrity="sha256-P2sZ6Uhpj6K&#43;k8hgHot8AqoG5gaYjvzSNVM/xjkrpEA="
+  <link rel="stylesheet" href="/css/coder.min.3f6b19e948698fa2be93c8601e8b7c02aa06e606988efcd235533fc6392ba440.css" integrity="sha256-P2sZ6Uhpj6K&#43;k8hgHot8AqoG5gaYjvzSNVM/xjkrpEA="
     crossorigin="anonymous" media="screen" />
   
 
@@ -122,7 +122,7 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
   
   
   
-  <link rel="stylesheet" href="https://shididev.com/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU="
+  <link rel="stylesheet" href="/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU="
     crossorigin="anonymous" media="screen" />
   
   
@@ -130,31 +130,31 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
   
 
   
-  <link rel="stylesheet" href="https://shididev.com/css/main.css" />
+  <link rel="stylesheet" href="/css/main.css" />
   
 
   
-  <script src="https://shididev.com/js/lazysizes.min.js" async></script>
+  <script src="/js/lazysizes.min.js" async></script>
   
-  <script src="https://shididev.com/js/flying-pages.min.js" async></script>
+  <script src="/js/flying-pages.min.js" async></script>
   
-  <script src="https://shididev.com/js/custom.js" async></script>
+  <script src="/js/custom.js" async></script>
   
 
-  <link rel="icon" type="image/png" href="https://shididev.com/images/f3/favicon-32x32.png"
+  <link rel="icon" type="image/png" href="/images/f3/favicon-32x32.png"
     sizes="32x32">
-  <link rel="icon" type="image/png" href="https://shididev.com/images/f3/favicon-16x16.png"
+  <link rel="icon" type="image/png" href="/images/f3/favicon-16x16.png"
     sizes="16x16">
 
-  <link rel="amphtml" type="text/html" href="https://shididev.com/amp/dev/docker-0-what-why-how/" title="Unnamed" />
+  <link rel="amphtml" type="text/html" href="/amp/dev/docker-0-what-why-how/" title="Unnamed" />
   <meta name="generator" content="Hugo 0.83.1" />
 
   <meta name="baidu-site-verification" content="TiReu51WyJ" />
 
   
   
-  <link rel="preload" href="https://shididev.com/scss/tagcloud.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://shididev.com/scss/tagcloud.css"></noscript>
+  <link rel="preload" href="/scss/tagcloud.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/scss/tagcloud.css"></noscript>
 
   
   <script defer src='https://platform-api.sharethis.com/js/sharethis.js#property=600a642fe0b9b900111a7f08&product=inline-share-buttons'></script>
@@ -178,7 +178,7 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://shididev.com/">
+    <a class="navigation-title" href="/">
       Unnamed
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -187,27 +187,27 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://shididev.com/about/">关于</a>
+            <a class="navigation-link" href="/about/">关于</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://shididev.com/self/">学习</a>
+            <a class="navigation-link" href="/self/">学习</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://shididev.com/dev/">技术</a>
+            <a class="navigation-link" href="/dev/">技术</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://shididev.com/money/">投资</a>
+            <a class="navigation-link" href="/money/">投资</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://shididev.com/project/">个人项目</a>
+            <a class="navigation-link" href="/project/">个人项目</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://shididev.com/goal/">长期目标</a>
+            <a class="navigation-link" href="/goal/">长期目标</a>
           </li>
         
       
@@ -248,11 +248,11 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="https://shididev.com/categories/docker/">Docker</a></div>
+    <a href="/categories/docker/">Docker</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://shididev.com/tags/docker/">Docker</a></div>
+    <a href="/tags/docker/">Docker</a></div>
 
         </div>
       </header>
@@ -269,7 +269,7 @@ Why 因为Docker发展到今天，市场上已经有无数可以直接拉取直�
 <p>最近入职了新公司，公司大发慈悲给配了一台电脑；</p>
 <p>——&ldquo;那么古尔丹，代价是什么？&rdquo;</p>
 <p>——&ldquo;这一切……&rdquo;</p>
-<p>电脑上的所有操作全部被监控了，一堆软件不让装，相应的也就不能用Google搜索了，我打开了熟悉的度娘，那一刻，人类终于回想起了被<a href="https://shididev.com/hexo/img/bazinga.gif">CSDN</a>支配的恐怖。</p>
+<p>电脑上的所有操作全部被监控了，一堆软件不让装，相应的也就不能用Google搜索了，我打开了熟悉的度娘，那一刻，人类终于回想起了被<a href="/hexo/img/bazinga.gif">CSDN</a>支配的恐怖。</p>
 <p>抛开充满抄袭狗不说，被抄袭的文章还是十年前东拼西凑的东西，单说Docker相关的文章，不知道这些CSDN作者是商量好了还是集体缺心眼，所有文章的第一步都是：</p>
 <p><code>docker pull centos</code></p>
 <p>或者是：</p>
@@ -478,7 +478,7 @@ sh get-docker.sh --mirror Aliyun
     
     
     
-    <li style="list-style: none;"><a href="https://shididev.com/dev/docker-2-container-oracle11g/">Docker-2、容器安装之Oracle 11g r2</a></li>
+    <li style="list-style: none;"><a href="/dev/docker-2-container-oracle11g/">Docker-2、容器安装之Oracle 11g r2</a></li>
     
     
     
@@ -490,7 +490,7 @@ sh get-docker.sh --mirror Aliyun
     
     
     
-    <li style="list-style: none;"><a href="https://shididev.com/dev/docker-1-container-mysql/">Docker-1、容器安装之MySQL(5.7/8.0)</a></li>
+    <li style="list-style: none;"><a href="/dev/docker-1-container-mysql/">Docker-1、容器安装之MySQL(5.7/8.0)</a></li>
     
     
     
@@ -601,11 +601,11 @@ sh get-docker.sh --mirror Aliyun
     <footer class="footer">
   
   <div class="footer-taxonomy">
-    <a href=https://shididev.com/tags style="color: #B36D61;">Tags</a>
+    <a href=/tags style="color: #B36D61;">Tags</a>
     👈
-    <a href=https://shididev.com/categories style="color: #FF8C31;">Categories</a>
+    <a href=/categories style="color: #FF8C31;">Categories</a>
     👉
-    <a href=https://shididev.com/series style="color: #519A73;">Series</a>
+    <a href=/series style="color: #519A73;">Series</a>
   </div>
   <section class="container">
     

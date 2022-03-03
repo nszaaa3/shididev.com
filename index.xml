@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unnamed</title>
-    <link>https://shididev.com/</link>
+    <link>/</link>
     <description>Recent content on Unnamed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 03 Mar 2022 09:25:12 +0000</lastBuildDate><atom:link href="https://shididev.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 09:25:12 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker-2、容器安装之Oracle 11g r2</title>
       
@@ -14,10 +14,10 @@
       
       
       
-      <link>https://shididev.com/dev/docker-2-container-oracle11g/</link>
+      <link>/dev/docker-2-container-oracle11g/</link>
       <pubDate>Thu, 03 Mar 2022 09:25:12 +0000</pubDate>
       
-      <guid>https://shididev.com/dev/docker-2-container-oracle11g/</guid>
+      <guid>/dev/docker-2-container-oracle11g/</guid>
       <description></description>
     </item>
     
@@ -28,10 +28,10 @@
       
       
       
-      <link>https://shididev.com/dev/docker-1-container-mysql/</link>
+      <link>/dev/docker-1-container-mysql/</link>
       <pubDate>Tue, 01 Mar 2022 11:38:04 +0000</pubDate>
       
-      <guid>https://shididev.com/dev/docker-1-container-mysql/</guid>
+      <guid>/dev/docker-1-container-mysql/</guid>
       <description></description>
     </item>
     
@@ -42,10 +42,10 @@
       
       
       
-      <link>https://shididev.com/dev/docker-0-what-why-how/</link>
+      <link>/dev/docker-0-what-why-how/</link>
       <pubDate>Sun, 20 Feb 2022 11:30:04 +0000</pubDate>
       
-      <guid>https://shididev.com/dev/docker-0-what-why-how/</guid>
+      <guid>/dev/docker-0-what-why-how/</guid>
       <description></description>
     </item>
     
@@ -54,10 +54,10 @@
       
       
       
-      <link>https://shididev.com/about.en/</link>
+      <link>/about.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/about.en/</guid>
+      <guid>/about.en/</guid>
       <description>About me</description>
     </item>
     
@@ -66,10 +66,10 @@
       
       
       
-      <link>https://shididev.com/categories/_index.en/</link>
+      <link>/categories/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/categories/_index.en/</guid>
+      <guid>/categories/_index.en/</guid>
       <description>Self-management and invest and full-stack development posts</description>
     </item>
     
@@ -78,10 +78,10 @@
       
       
       
-      <link>https://shididev.com/link.en/</link>
+      <link>/link.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/link.en/</guid>
+      <guid>/link.en/</guid>
       <description>Friend Links</description>
     </item>
     
@@ -90,10 +90,10 @@
       
       
       
-      <link>https://shididev.com/goal.en/</link>
+      <link>/goal.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/goal.en/</guid>
+      <guid>/goal.en/</guid>
       <description>My ten years personal goal</description>
     </item>
     
@@ -102,10 +102,10 @@
       
       
       
-      <link>https://shididev.com/affiliate.en/</link>
+      <link>/affiliate.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/affiliate.en/</guid>
+      <guid>/affiliate.en/</guid>
       <description>My Recommend Things</description>
     </item>
     
@@ -114,10 +114,10 @@
       
       
       
-      <link>https://shididev.com/tool.en/</link>
+      <link>/tool.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/tool.en/</guid>
+      <guid>/tool.en/</guid>
       <description>My Tools</description>
     </item>
     
@@ -126,10 +126,10 @@
       
       
       
-      <link>https://shididev.com/series/_index.en/</link>
+      <link>/series/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/series/_index.en/</guid>
+      <guid>/series/_index.en/</guid>
       <description>series posts</description>
     </item>
     
@@ -138,10 +138,10 @@
       
       
       
-      <link>https://shididev.com/project.en/</link>
+      <link>/project.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/project.en/</guid>
+      <guid>/project.en/</guid>
       <description>Build passive income through personal side project</description>
     </item>
     
@@ -150,10 +150,10 @@
       
       
       
-      <link>https://shididev.com/tags/_index.en/</link>
+      <link>/tags/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/tags/_index.en/</guid>
+      <guid>/tags/_index.en/</guid>
       <description>All about make my life better tags, eg. money, etf and so on</description>
     </item>
     
@@ -162,10 +162,10 @@
       
       
       
-      <link>https://shididev.com/talk/</link>
+      <link>/talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/talk/</guid>
+      <guid>/talk/</guid>
       <description>My talks</description>
     </item>
     
@@ -174,10 +174,10 @@
       
       
       
-      <link>https://shididev.com/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/about/</guid>
+      <guid>/about/</guid>
       <description>关于本站</description>
     </item>
     
@@ -186,10 +186,10 @@
       
       
       
-      <link>https://shididev.com/link/</link>
+      <link>/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/link/</guid>
+      <guid>/link/</guid>
       <description>我的朋友们及我关注的博主</description>
     </item>
     
@@ -198,10 +198,10 @@
       
       
       
-      <link>https://shididev.com/project/</link>
+      <link>/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/project/</guid>
+      <guid>/project/</guid>
       <description>通过个人产品、项目、副业建立被动收入</description>
     </item>
     
@@ -210,10 +210,10 @@
       
       
       
-      <link>https://shididev.com/affiliate/</link>
+      <link>/affiliate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/affiliate/</guid>
+      <guid>/affiliate/</guid>
       <description>分享我在使用的一些产品和服务，基准是我正在使用的感觉不错的东西</description>
     </item>
     
@@ -222,10 +222,10 @@
       
       
       
-      <link>https://shididev.com/tool/</link>
+      <link>/tool/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/tool/</guid>
+      <guid>/tool/</guid>
       <description>分享我在使用的一些实用小工具</description>
     </item>
     
@@ -234,10 +234,10 @@
       
       
       
-      <link>https://shididev.com/goal/</link>
+      <link>/goal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/goal/</guid>
+      <guid>/goal/</guid>
       <description>我的长期目标</description>
     </item>
     
@@ -246,10 +246,10 @@
       
       
       
-      <link>https://shididev.com/invest/</link>
+      <link>/invest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/invest/</guid>
+      <guid>/invest/</guid>
       <description>投资组合管理服务</description>
     </item>
     
@@ -258,10 +258,10 @@
       
       
       
-      <link>https://shididev.com/_ad/</link>
+      <link>/_ad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shididev.com/_ad/</guid>
+      <guid>/_ad/</guid>
       <description>本站品牌广告</description>
     </item>
     
