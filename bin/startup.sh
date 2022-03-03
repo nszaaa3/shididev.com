@@ -1,2 +1,2 @@
 cd ..
-hugo  server --port=4000
+nohup hugo  server --port=4000 &
