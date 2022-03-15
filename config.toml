@@ -1,4 +1,4 @@
-baseURL = "https://shididev.com/hugo"
+baseURL = "https://shididev.com/hugo/"
 title = "Unnamed"
 theme = "hugo-coder"
 languagecode = "zh-cn"
