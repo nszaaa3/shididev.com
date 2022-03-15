@@ -130,24 +130,24 @@ FootnoteReturnLinkContents = "↑"
             [[languages.zh-cn.menu.main]]
                 name = "关于"
                 weight = 2
-                url = "/about/"
+                url = "/hugo/about/"
             [[languages.zh-cn.menu.main]]
                 name = "学习"
                 weight = 3
-                url  = "/self/"
+                url  = "/hugo/self/"
             [[languages.zh-cn.menu.main]]
                 name = "技术"
                 weight = 4
-                url  = "/dev/"
+                url  = "/hugo/dev/"
             [[languages.zh-cn.menu.main]]
                 name = "投资"
                 weight = 5
-                url  = "/money/"
+                url  = "/hugo/money/"
             [[languages.zh-cn.menu.main]]
                 name = "个人项目"
                 weight = 6
-                url  = "/project/"
+                url  = "/hugo/project/"
             [[languages.zh-cn.menu.main]]
                 name = "长期目标"
                 weight = 7
-                url  = "/goal/"
+                url  = "/hugo/goal/"
